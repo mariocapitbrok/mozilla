@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select id="select1">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3" selected>Option 3</option>
+  </select>
+  
+  <select id="select2">
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+    <option value="option6" selected>Option 6</option>
+  </select>
+  
+  <select id="select3">
+    <option value="option7">Option 7</option>
+    <option value="option8">Option 8</option>
+    <option value="option9">Option 9</option>
+  </select>
+  
+  <select id="select4">
+    <option value="option10">Option 10</option>
+    <option value="option11">Option 11</option>
+    <option value="option12" selected>Option 12</option>
+  </select>
+  
+  <select id="select5">
+    <option value="option13">Option 13</option>
+    <option value="option14">Option 14</option>
+    <option value="option15">Option 15</option>
+  </select>
+  
+  <select id="select6">
+    <option value="option16">Option 16</option>
+    <option value="option17">Option 17</option>
+    <option value="option18" selected>Option 18</option>
+  </select>
+  
+  <select id="select7">
+    <option value="option19">Option 19</option>
+    <option value="option20">Option 20</option>
+    <option value="option21">Option 21</option>
+  </select>
+  
+  <select id="select8">
+    <option value="option22">Option 22</option>
+    <option value="option23">Option 23</option>
+    <option value="option24" selected>Option 24</option>
+  </select>
+  
+  <select id="select9">
+    <option value="option25">Option 25</option>
+    <option value="option26">Option 26</option>
+    <option value="option27">Option 27</option>
+  </select>
+  
+  <select id="select10">
+    <option value="option28">Option 28</option>
+    <option value="option29">Option 29</option>
+    <option value="option30" selected>Option 30</option>
+  </select>
+
+  <script>
+    //This example shows how to iterate through a collection of objects collected by querySelectorAll. This is because querySelectorAll returns a NodeList (which is a collection of objects)
+
+    const elems = document.querySelectorAll('select option:checked')
+    const values = Array.prototype.map.call(elems, ({ value }) => value)
+
+    console.log('Values:',values)
+
+  </script>
+</body>
+</html>
