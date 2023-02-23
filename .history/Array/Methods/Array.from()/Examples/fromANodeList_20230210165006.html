@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="https://media.istockphoto.com/photos/two-kids-standing-on-a-stairs-holding-a-lantern-picture-id494320850?b=1&k=20&m=494320850&s=612x612&w=0&h=FR2b3wVWmWyUgwjkfhFGqZJ4ChvlmnhyDBPItwwaluI=" width="100" alt="Image 1">
+  <img src="https://media.istockphoto.com/photos/prague-streets-and-squares-picture-id1408176065?b=1&k=20&m=1408176065&s=612x612&w=0&h=ACGVBIRlgjwwucXUq3RpPRkUpCgHRGZaHsEbIDa6HMQ=ng" width="100" alt="Image 2" width="500" height="300">
+  <img src="https://media.istockphoto.com/photos/art-nouveau-house-picture-id176115704?b=1&k=20&m=176115704&s=612x612&w=0&h=nWWf2hYiV6zWbSGYCt4mesfp0-N5oEUn8AKcbtU2TkE=" width="100" alt="Image 3" style="float: left; margin: 10px;">
+  <img src="http://media.istockphoto.com/photos/effect-optical-illusion-to-decrease-speed-woman-on-zebra-crossing-picture-id1170164255?b=1&k=20&m=1170164255&s=612x612&w=0&h=_tdSg5HCzQzksuqSZLah8wlITM5zKngBfkIG6_YARVY=" width="100" alt="Image 4" class="center">
+  <img src="https://media.istockphoto.com/photos/cityscape-of-prague-in-winter-picture-id1343771087?b=1&k=20&m=1343771087&s=612x612&w=0&h=4eg9ElRy1crdKxk_rCS5Edx4Z4QIHiw3lM9b--OCKk0=" alt="Image 5"  width="100" id="banner">
+  <img src="https://media.istockphoto.com/photos/red-carpet-on-a-marble-stairway-picture-id182236320?b=1&k=20&m=182236320&s=612x612&w=0&h=oRsaxq17wORRi7Dfh-G1e07L98A8WW8bnh782ioYoKk=" alt="Image 6" width="100" border="1">
+  <img src="http://media.istockphoto.com/photos/historical-staircase-at-charles-bridge-by-night-picture-id1344412237?b=1&k=20&m=1344412237&s=612x612&w=0&h=eZSgNMUnNzCo0hc9hj5VVoJ2c5u06GoTX51l252EpMw="  width="100" alt="Image 7" style="display: block; margin: 0 auto;">
+
+
+  <script>
+    // Create an array based on a property of DOM Elements
+    const images = document.querySelectorAll('img')
+    const sources = Array.from(images, image => image.src)
+    const insecureSources = sources.filter(link => link.startsWith('http://'))
+    console.log(insecureSources)
+  </script>
+</body>
+</html>

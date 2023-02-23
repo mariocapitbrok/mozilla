@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" value="Set paragraph background color" onclick="setBackground()" />
+  <p>hi</p>
+  <p>hello</p>
+
+  <script>
+    function setBackground() {
+      const paragraphs = document.getElementsByTagName("p")
+      const secondParagraph = paragraphs[1]
+
+      secondParagraph.style.background = "red"
+
+      const myTextNode = document.createTextNode("world")
+      const space = document.createTextNode(" ")
+
+      secondParagraph.appendChild(space)
+      secondParagraph.appendChild(myTextNode)
+    }
+  </script>
+</body>
+</html>

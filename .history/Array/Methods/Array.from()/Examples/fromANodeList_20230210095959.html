@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="image1.jpg" alt="Image 1">
+  <img src="image2.png" alt="Image 2" width="500" height="300">
+  <img src="image3.jpeg" alt="Image 3" style="float: left; margin: 10px;">
+  <img src="image4.gif" alt="Image 4" class="center">
+  <img src="image5.jpg" alt="Image 5" id="banner">
+  <img src="image6.png" alt="Image 6" width="100%" border="1">
+  <img src="image7.jpeg" alt="Image 7" style="display: block; margin: 0 auto;">
+
+
+  <script>
+    // Create an array based on a property of DOM Elements
+    const images = document.querySelectorAll('img')
+    const sources = Array.from(images, image => image.src)
+    const insecureSources = sources.filter(link => link.startsWith('http://'))
+  </script>
+</body>
+</html>

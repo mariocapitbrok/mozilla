@@ -1,0 +1,14 @@
+// Object.isSealed()
+// The Object.isSealed() static method determines if an object is sealed.
+
+const object1 = {
+  property1: 42,
+}
+
+console.log(Object.isSealed(object1))
+// Expected output: false
+
+Object.seal(object1)
+
+console.log(Object.isSealed(object1))
+// Expected output: true

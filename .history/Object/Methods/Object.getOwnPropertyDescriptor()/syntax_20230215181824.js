@@ -1,0 +1,1 @@
+Object.getOwnPropertyDescriptor(obj, prop)

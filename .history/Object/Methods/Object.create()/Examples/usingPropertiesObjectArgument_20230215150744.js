@@ -1,0 +1,2 @@
+// Using propertiesObject argument with Object.create()
+// Object.create() allows fine-tuned control over the object creation process. The object initializer syntax is, in fact, a syntax sugar of Object.create(). With Object.create(), we can create objects with a designated prototype and also some properties. Note that the second parameter maps keys to property descriptors — this means you can control each property's enumerability, configurability, etc. as well, which you can't do in object initializers.
