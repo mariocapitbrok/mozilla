@@ -1,0 +1,23 @@
+// Object.prototype.isPrototypeOf()
+
+// The isPrototypeOf() method checks if an object exists in another object's prototype chain.
+
+// Note: isPrototypeOf() differs from the instanceof operator. In the expression object instanceof AFunction, object's prototype chain is checked against AFunction.prototype, not against AFunction itself.
+
+function Foo() {}
+function Bar() {}
+
+// The prototype of the Bar constructor is set to an object created from the prototype of the Foo constructor, using the Object.create method.
+Bar.prototype = Object.create(Foo.prototype)
+
+// A new object is created from the Bar constructor, using the `new` keyword.
+const bar = new Bar()
+
+console.log(Foo.prototype.isPrototypeOf(bar))
+// Expected output: true
+console.log(Bar.prototype.isPrototypeOf(bar))
+// Expected output: true
+
+/*
+In summary, this code creates a prototype chain between the Bar and Foo constructors by setting the Bar.prototype object to a new object created from the Foo.prototype object. This allows instances of the Bar constructor to inherit properties and methods from the Foo constructor. The new keyword is used to create a new object from the Bar constructor, which is assigned to the bar variable.
+*/
